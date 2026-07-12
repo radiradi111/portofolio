@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,13 +11,15 @@ body {
     color: white;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #111827;
-    padding: 18px 10%;
-    z-index: 1000;
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 10%;
+    background:rgba(17,24,39,.8);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
 }
 
 nav {
@@ -46,17 +48,18 @@ nav a:hover {
     color: #38bdf8;
 }
 
-.hero {
-    min-height: 100vh;
-    padding: 120px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.hero{
+    min-height:100vh;
+    padding:120px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:60px;
 }
 
-.hero-text {
-    max-width: 550px;
+.hero-text{
+    max-width:600px;
 }
 
 .hero-text h1 {
@@ -64,10 +67,11 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.hero-text p {
-    line-height: 1.7;
-    color: #cbd5e1;
-    margin-bottom: 30px;
+.hero-text p{
+    line-height:1.8;
+    color:#94a3b8;
+    margin-bottom:30px;
+    font-size:18px;
 }
 
 .btn{
@@ -87,7 +91,7 @@ nav a:hover {
 }
 
 .hero-image img {
-    width: 320px;
+    width: 340px;
     border-radius: 50%;
     border: 5px solid #38bdf8;
 }
@@ -115,14 +119,15 @@ section h2 {
 
 .card{
     background:#1e293b;
-    padding:25px;
-    border-radius:15px;
+    border:1px solid #334155;
+    border-radius:18px;
+    padding:20px;
     transition:.3s;
-    overflow:hidden;
 }
 
-.card:hover {
-    transform: translateY(-8px);
+.card:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 10px 30px rgba(56,189,248,.3);
 }
 
 #contact p {
@@ -213,7 +218,8 @@ nav ul{
 .hero h2{
     color:#38bdf8;
     margin:15px 0 25px;
-    height:45px;
+    min-height:60px;
+    line-height:1.4;
 }
 
 .fade {
@@ -290,8 +296,16 @@ nav a.active{
 
 .card img{
     width:100%;
+    height:200px;
+    object-fit:cover;
     border-radius:10px;
     margin-bottom:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    border-color:#38bdf8;
+    transform:translateY(-5px);
 }
 
 .project-grid{
@@ -407,4 +421,68 @@ footer p{
     width:100%;
     border-radius:12px;
     margin-bottom:20px;
+}
+
+.featured{
+    display:inline-block;
+    margin:10px 0 15px;
+    padding:6px 12px;
+    background:rgba(56,189,248,.15);
+    color:#38bdf8;
+    border:1px solid #38bdf8;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.card{
+    position:relative;
+}
+
+.project-overlay{
+    position:absolute;
+    top:35px;
+    left:35px;
+    background:rgba(15,23,42,.9);
+    color:#38bdf8;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    border:1px solid #38bdf8;
+}
+
+.timeline{
+    border-left:3px solid #38bdf8;
+    padding-left:25px;
+}
+
+.timeline-item{
+    margin-bottom:35px;
+    position:relative;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-35px;
+    top:6px;
+    width:14px;
+    height:14px;
+    background:#38bdf8;
+    border-radius:50%;
+}
+
+.timeline-item span{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+.timeline-item h3{
+    margin:8px 0;
+}
+
+.timeline-item p{
+    color:#94a3b8;
+    line-height:1.6;
 }
