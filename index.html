@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radi Oksandi | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Radi Oksandi</h2>
+
+            <ul>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link"  href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Halo, Saya 
+              <span>Radi Oksandi</span></h1>
+<h2><span id="typing"></span></h2>
+
+            <p>
+                Saya belajar pemrograman secara mandiri dan suka
+                membuat website, bot WhatsApp, dan aplikasi sederhana
+                menggunakan JavaScript.
+            </p>
+
+            <div class="buttons">
+
+    <a href="#projects" class="btn">
+        Lihat Project
+    </a>
+
+    <a href="https://github.com/radiradi111"
+   class="btn secondary"
+   target="_blank">
+    💻 GitHub
+    </a>
+
+    <a href="https://wa.me/6289526067347"
+   class="btn secondary"
+   target="_blank">
+    💬 WhatsApp
+    </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/profile.jpg" alt="Profile">
+        </div>
+
+    </section>
+
+    <section id="about" class="hidden">
+
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Saya adalah pelajar yang sedang belajar web development
+            dan JavaScript. Saya senang membangun project untuk
+            menambah pengalaman dan kemampuan coding.
+        </p>
+
+    </section>
+
+    <section id="skills" class="hidden">
+
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar">
+            <div class="fill" data-width="85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar">
+            <div class="fill" data-width="75%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar">
+            <div class="fill" data-width="70%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>Node.js</p>
+        <div class="bar">
+            <div class="fill" data-width="60%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>GitHub</p>
+        <div class="bar">
+            <div class="fill" data-width="65%"></div>
+        </div>
+    </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects" class="hidden">
+
+        <h2>Projects</h2>
+
+      <div class="project-grid">
+
+        <div class="card">
+
+    <img src="assets/projects/bot.png" alt="WhatsApp Bot">
+
+    <h3>WhatsApp Bot</h3>
+
+    <p>
+        Bot WhatsApp menggunakan JavaScript dan Node.js dengan fitur game,
+        database, dan sistem leveling.
+    </p>
+
+    <div class="tech">
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>Baileys</span>
+    </div>
+
+    <a href="#"
+class="project-btn"
+data-title="WhatsApp Bot"
+data-desc="Bot WhatsApp menggunakan JavaScript, Node.js, dan Baileys. Memiliki fitur RPG, game, AI, downloader, dan leaderboard."
+data-image="assets/projects/bot.png">
+Lihat Detail
+    </a>
+
+        </div>
+
+        <div class="card">
+
+    <img src="assets/projects/portfolio.png" alt="Portfolio Website">
+
+    <h3>Portfolio Website</h3>
+
+    <p>
+        Website portfolio responsif yang dibuat menggunakan HTML, CSS, dan JavaScript.
+        Memiliki animasi, tampilan modern, dan desain yang mobile friendly.
+    </p>
+
+    <div class="tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+
+    <a href="#"
+class="project-btn"
+data-title="Portfolio Website"
+data-desc="Website portfolio responsif menggunakan HTML, CSS, dan JavaScript."
+data-image="assets/projects/portfolio.png">
+Lihat Detail
+    </a>
+
+        </div>
+
+    </div>
+      
+    </section>
+
+    <section id="contact" class="hidden">
+
+    <h2>Contact</h2>
+
+    <div class="contact-card">
+
+        <p>📧 Email</p>
+        <p>oksandiradi@email.com</p>
+
+        <p>💻 GitHub</p>
+        <p>github.com/radiradi111</p>
+
+        <p>💬 Discord</p>
+        <p>@radidididi</p>
+
+    </div>
+
+    </section>
+
+<footer>
+
+    <p>© 2026 Radi Oksandi. Built with HTML, CSS & JavaScript.</p>
+
+</footer>
+
+  <div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+    <span class="close">&times;</span>
+
+    <img id="modalImage" src="" alt="Project">
+
+    <h2 id="modalTitle">Project</h2>
+
+    <p id="modalDesc"></p>
+
+    </div>
+
+  </div>
+
+<button id="topBtn">↑</button>
+
+<script src="script.js"></script>
+  
+</body>
+</html>
