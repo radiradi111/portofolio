@@ -408,9 +408,10 @@ footer p{
     position:absolute;
     top:15px;
     right:20px;
-    font-size:28px;
+    font-size:30px;
     cursor:pointer;
-    color:#38bdf8;
+    color:#fff;
+    z-index:10000;
 }
 
 .close:hover{
@@ -419,6 +420,8 @@ footer p{
 
 #modalImage{
     width:100%;
+    max-height:500px;
+    object-fit:cover;
     border-radius:12px;
     margin-bottom:20px;
 }
